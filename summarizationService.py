@@ -3,11 +3,11 @@ import json
 from newspaper import Article
 from newspaper.configuration import Configuration
 
+
 def summarizeArticles(toSummarize):
     result = []
 
     for source in toSummarize:
-        config = Configuration();
         article = Article(source)
 
         article.download()
