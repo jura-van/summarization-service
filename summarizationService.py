@@ -1,13 +1,12 @@
 import json
 
 from newspaper import Article
-from newspaper.configuration import Configuration
 
 
-def summarizeArticles(toSummarize):
+def summarize_articles(to_summarize):
     result = []
 
-    for source in toSummarize:
+    for source in to_summarize:
         article = Article(source)
 
         article.download()
